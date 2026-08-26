@@ -1,0 +1,24 @@
+{
+  "name": "fullstack-slider",
+  "version": "1.0.0",
+  "description": "This is my very first web game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basstbone/fullstack-slider.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/basstbone/fullstack-slider/issues"
+  },
+  "homepage": "https://github.com/basstbone/fullstack-slider#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
