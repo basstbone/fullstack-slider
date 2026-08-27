@@ -1,0 +1,39 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: darkslategray;
+  background-size: cover;
+}
+
+footer {
+  background-color: darkslategray;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Define a 5x5 grid */
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 250px;
+  height: 250px;
+  border: 2px solid black;
+  margin: auto;
+}
+
+.game-piece, .target {
+  width: 100%;
+  height: 100%;
+}
+
+#game-piece {
+  background-color: #007bff;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#target {
+  background-color: #28a745;
+  grid-row: 3;
+  grid-column: 3;
+}

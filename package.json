@@ -12,8 +12,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "license": "ISC", 
+  "type": "module",
   "bugs": {
     "url": "https://github.com/basstbone/fullstack-slider/issues"
   },
