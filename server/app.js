@@ -8,8 +8,8 @@ const app = express();
 
 app.use(express.static(join(__dirname, 'public')));
 
-app.get('app/', (req, res) => {
-  res.sendFile(join(__dirname, 'public', 'index.html'))
+app.get('/', (req, res) => {
+  res.sendFile(join(__dirname, '../public', 'index.html'))
 })
 
 app.listen(3000, () => {
