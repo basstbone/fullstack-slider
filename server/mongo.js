@@ -34,7 +34,7 @@ app.get('/api/hello',function(req, res) {
     const message = {
 
       message:
-        'hello from har code json',
+        'hello from hard code json',
 
       success:
         true
