@@ -2,6 +2,11 @@ import 'dotenv/config';
 //const { MongoClient, ServerApiVersion } = require('mongodb');
 import { MongoClient, ServerApiVersion } from 'mongodb';
 import express from 'express';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 const app = express();
 
 const uri = process.env.MONGO_URI
@@ -29,6 +34,13 @@ async function run() {
 }
 run().catch(console.dir);
 
+app.use(express.static(join(__dirname, 'public')));
+app.use( express.json());
+
+app.get('/', (req, res) => {
+  res.sendFile(join(__dirname, '../public', 'hotel.html'))
+})
+
 app.get('/api/hello',function(req, res) {
 
     const message = {
@@ -42,6 +54,22 @@ app.get('/api/hello',function(req, res) {
     };
 
     res.json(message);
+
+  }
+);
+
+app.post('/api/students',function(req, res) {
+
+    console.log(
+      req.body
+    );
+
+    res.json({
+
+      received:
+        req.body
+
+    });
 
   }
 );
