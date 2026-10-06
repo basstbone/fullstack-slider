@@ -151,8 +151,18 @@ app.delete('/api/dev/clear', async function (req, res) {
       .deleteMany({});
 
   res.json(result);
+  }
+)
 
-}
+app.delete('/api/items/:id', async function(req, res) {
+
+    const id = new ObjectId(req.params.id);
+
+    const result = await collection.deleteOne({_id: id});
+
+    res.json(result);
+
+  }
 );
 //start up server
 
