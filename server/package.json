@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/basstbone/fullstack-slider#readme",
   "dependencies": {
-    "express": "^5.2.1"
-  },
-  "devDependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.6.0",
     "nodemon": "^3.1.14"
   }
 }
