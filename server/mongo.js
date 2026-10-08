@@ -166,6 +166,6 @@ app.delete('/api/items/:id', async function(req, res) {
 );
 //start up server
 
-app.listen(5500, () => {
-  console.log('Server is running on http://localhost:5500')
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000')
 })
